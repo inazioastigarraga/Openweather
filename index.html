@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather is sweet!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/9aa3b96097.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header bg-dark text-light sticky-top text-center m-0 p-3">
+        <h1>Weather is sweet yeah!</h1>
+    </header>
+
+    <main class="container-fluid row m-0 p-0">
+        <section class="sidebar col-sm-5 col-md-4 col-lg-3 bg-light">
+            <form id="citySearchForm">
+                <label for="cityInput" class="font-weight-bold">Introduce una ciudad:</label>
+                <div class="input-group mb-3">
+                    <input type="text" id="cityInput" class="form-control" aria-label="cityInput" aria-describedby="city-input">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary text-light" type="submit">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="col pt-3">
+            <div id= "curWeatherCard" class="card mb-3">
+                <h1 class="p-3">Busca una ciudad</h1>
+            </div>
+            <h4>Próximos 5 días:</h4>
+            <div id="dayForcast" class="container-fluid row m-0 p-0">
+
+            </div>
+        </section>
+    </main>
+    
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
